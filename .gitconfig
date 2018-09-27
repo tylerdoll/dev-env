@@ -1,0 +1,26 @@
+[alias]
+	st = status
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    ll = branch -vv
+
+	# aliases to match hg commands
+	out = !git fetch && git log FETCH_HEAD..
+	outgoing = !git fetch && git log FETCH_HEAD
+	in = !git fetch && git log ..FETCH_HEAD
+	incoming = !git fetch && git log ..FETCH_HEAD
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[credential]
+	helper = cache --timeout=86400
+[push]
+	default = simple
+[core]
+	editor = vim
+[branch]
+    autosetuprebase = always
+    autosetupmerge = always
+[pull]
+    rebase = true
+[color]
+    status = always
+    branch = always
+    ui = true
