@@ -18,11 +18,12 @@ Plugin 'tomasr/molokai'
 Plugin 'othree/yajs.vim'
 Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'drewtempelmeyer/palenight.vim'
 
 " All of your Plugins must be added before the following line
-call vundle#end()                 " required
+call vundle#end()                                                               " required
 
 filetype plugin indent on                                                       " autoindent
 syntax on                                                                       " syntax highlighting
@@ -71,3 +72,7 @@ noremap <Right> <NOP>
 let g:jsdoc_allow_input_prompt=1      " Allow prompt for interactive input
 let g:jsdoc_input_description=1       " Prompt for a function description
 let g:jsdoc_underscore_private=1      " Detect underscore starting functions as private convention
+
+" Auto open NERDTree when running vim w/o arguments
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
