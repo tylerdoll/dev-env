@@ -2,4 +2,6 @@
 Things I use in my development environment.
 
 Requirements:  
-Vundle - https://github.com/VundleVim/Vundle.vim
+- Vundle
+  - Link: https://github.com/VundleVim/Vundle.vim
+  - Install `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
