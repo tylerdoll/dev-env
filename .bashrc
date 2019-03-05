@@ -6,3 +6,6 @@ PS1='\[\e[95m\]\u@\h:\w\[\e[96m\]\$ \[\e[39m\]'
 
 alias ll="ls -la"
 alias vi="vim"
+
+# Local customizations
+[ -f '.bash.local.sh' ] && source '.bash.local.sh'
