@@ -8,4 +8,5 @@ alias ll="ls -la"
 alias vi="vim"
 
 # Local customizations
-[ -f '.bash.local.sh' ] && source '.bash.local.sh'
+LOCAL_BASHRC=~/.bashrc.local
+[ -f $LOCAL_BASHRC ] && source $LOCAL_BASHRC
