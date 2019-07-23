@@ -27,6 +27,10 @@ PS1="$fgDarkGray----------------------------------------------------------------
 alias ll="ls -la"
 alias vi="vim"
 
+# List contents after cd
+cd() { builtin cd "$@"; ll; } 
+
+
 # Local customizations
 LOCAL_BASHRC=~/.bashrc.local
 [ -f $LOCAL_BASHRC ] && source $LOCAL_BASHRC
