@@ -58,6 +58,7 @@ colorscheme palenight
 imap jk <esc> 
 imap JK <esc>
 map <C-k> :NERDTreeToggle<CR>
+map <silent> <C-n> :noh<CR>
 
 """ Disable arrow keys in VIM...IT'S A BAD HABIT
 noremap <Up> <NOP>
