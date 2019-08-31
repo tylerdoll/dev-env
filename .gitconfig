@@ -15,6 +15,7 @@
 	default = simple
 [core]
 	editor = vim
+	autocrlf = input
 [branch]
     autosetuprebase = always
     autosetupmerge = always
@@ -25,4 +26,5 @@
     branch = always
     ui = true
 [user]
-	name = Tyler Doll
+	name = tylerdoll
+	email = tdoll1997@gmail.com
