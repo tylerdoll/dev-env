@@ -16,6 +16,7 @@
 [core]
 	editor = vim
 	autocrlf = input
+	pager = less --tabs=4 -RFX
 [branch]
     autosetuprebase = always
     autosetupmerge = always
@@ -24,7 +25,22 @@
 [color]
     status = always
     branch = always
-    ui = true
+	ui = true
 [user]
-	name = tylerdoll
-	email = tdoll1997@gmail.com
+	name = Tyler Doll
+
+# Git diff so fancy
+[pager]
+    diff = diff-so-fancy | less --tabs=4 -RFXG --pattern '^(Date|added|deleted|modified|diff): '
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = 11
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
