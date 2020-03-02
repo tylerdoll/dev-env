@@ -11,6 +11,7 @@
 	in = !git fetch && git log ..FETCH_HEAD
 	incoming = !git fetch && git log ..FETCH_HEAD
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    difff = --no-pager diff --name-only
 [credential]
 	helper = cache --timeout=86400
 [push]
