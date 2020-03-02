@@ -1,7 +1,8 @@
 [alias]
 	st = status
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
-    ll = branch -vv
+    ll = branch -v
+    llr = branch -vr
 
 	# aliases to match hg commands
 	out = !git fetch && git log FETCH_HEAD..
