@@ -3,6 +3,7 @@
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
     ll = branch -v
     llr = branch -vr
+    amend = commit --amend
 
 	# aliases to match hg commands
 	out = !git fetch && git log FETCH_HEAD..
