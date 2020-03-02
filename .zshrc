@@ -114,9 +114,6 @@ function squash_devel() {
     git status
 }
 
-# Git autocomplete
-source ~/bash_completion.d/git
-
 # Git diff-so-fancy
 export PATH=$PATH:~/dev-env/scripts/diff-so-fancy
 
