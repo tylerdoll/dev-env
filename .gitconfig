@@ -1,7 +1,7 @@
 [alias]
 	st = status
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
-    ll = branch -v
+    ll = branch -vv
     llr = branch -vr
     amend = commit --amend
 
