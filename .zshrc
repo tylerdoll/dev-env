@@ -126,3 +126,5 @@ cd() { builtin cd "$@"; ll; }
 alias sde="cd /disk01/environment/docker && ./docker-compose-sde run sde"
 alias fcpp='clang-format -i -style=Google'
 alias g='cd /tmp/code/Ground'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

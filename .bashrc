@@ -34,3 +34,5 @@ cd() { builtin cd "$@"; ll; }
 # Local customizations
 LOCAL_BASHRC=~/.bashrc.local
 [ -f $LOCAL_BASHRC ] && source $LOCAL_BASHRC
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
