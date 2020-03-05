@@ -103,6 +103,9 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+
+
+export TERM=xterm-256color
 export DOCKER_HOST=unix:///disk01/var/run/docker.sock
 
 function squash_devel() {
