@@ -105,27 +105,12 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
-
 export TERM=xterm-256color
-export DOCKER_HOST=unix:///disk01/var/run/docker.sock
-
-function squash_devel() {
-    branch=$1
-
-    git fetch
-    git checkout $branch
-    git reset $(git merge-base origin/development $branch)
-    git status
-}
 
 # Git diff-so-fancy
 export PATH=$PATH:~/dev-env/scripts/diff-so-fancy
 
 # List contents after cd
-cd() { builtin cd "$@"; ll; } 
-
-alias sde="cd /disk01/environment/docker && ./docker-compose-sde run sde"
-alias fcpp='clang-format -i -style=Google'
-alias g='cd /tmp/code/Ground'
+cd() { builtin cd "$@"; ll; }
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
