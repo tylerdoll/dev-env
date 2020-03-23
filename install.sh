@@ -8,4 +8,4 @@ mkdir -p ~/.vim/.backup ~/.vim/.swp/ ~/.vim/.undo
 sudo git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # Install fzf
-scripts/fzf/install.sh
+scripts/fzf/install
