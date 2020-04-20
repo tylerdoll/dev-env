@@ -62,9 +62,14 @@ colorscheme palenight
 """"""""""""""""""""""""""""""""
 imap jk <esc> 
 imap JK <esc>
-map <C-k> :NERDTreeToggle<CR>
+map <C-b> :NERDTreeToggle<CR>
 map <silent> <C-n> :noh<CR>
 nnoremap <space> za                                                             " Trigger case folding on space
+"split navigations
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 """ Disable arrow keys in VIM...IT'S A BAD HABIT
 noremap <Up> <NOP>
