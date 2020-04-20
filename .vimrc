@@ -33,6 +33,8 @@ set number                                                                      
 set autoindent                                                                  " Enable autoindenting new lines
 set mouse=a                                                                     " Enable mouse
 set foldenable                                                                  " Enable folding
+set foldmethod=indent                                                           " Fold based on line indets
+set foldlevel=99
 set viminfo='100,<100,s10,h                                                     " 100 marks, 100 lines, 10 kb, disable search highlight
 set title                                                                       " Show VIM in terminal title
 set backspace=indent,eol,start                                                  " Allow backspacing for everything
@@ -59,6 +61,7 @@ imap jk <esc>
 imap JK <esc>
 map <C-k> :NERDTreeToggle<CR>
 map <silent> <C-n> :noh<CR>
+nnoremap <space> za                                                             " Trigger case folding on space
 
 """ Disable arrow keys in VIM...IT'S A BAD HABIT
 noremap <Up> <NOP>
