@@ -20,6 +20,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'drewtempelmeyer/palenight.vim'
+Plugin 'davidhalter/jedi-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()                                                               " required
@@ -84,6 +85,9 @@ noremap <Right> <NOP>
 let g:jsdoc_allow_input_prompt=1      " Allow prompt for interactive input
 let g:jsdoc_input_description=1       " Prompt for a function description
 let g:jsdoc_underscore_private=1      " Detect underscore starting functions as private convention
+
+" Jedi Vim
+let g:jedi#use_splits_not_buffers = "left"
 
 " Auto open NERDTree when running vim w/o arguments
 autocmd StdinReadPre * let s:std_in=1
