@@ -72,6 +72,7 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+nnoremap <Y> y$<CR>                                                             " Y yanks to end of line
 
 """ Disable arrow keys in VIM...IT'S A BAD HABIT
 noremap <Up> <NOP>
