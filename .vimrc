@@ -61,6 +61,7 @@ colorscheme palenight
 """"""""""""""""""""""""""""""""
 """"""""""""""" Key bindings
 """"""""""""""""""""""""""""""""
+let mapleader = "\<Space>"                                                      " Map leader to space
 imap jk <esc> 
 imap JK <esc>
 map <C-b> :NERDTreeToggle<CR>
