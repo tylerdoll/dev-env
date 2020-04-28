@@ -18,9 +18,9 @@ Plugin 'othree/yajs.vim'
 Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'drewtempelmeyer/palenight.vim'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'junegunn/fzf.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()                                                               " required
@@ -89,6 +89,8 @@ let g:jsdoc_underscore_private=1      " Detect underscore starting functions as 
 " Jedi Vim
 let g:jedi#use_splits_not_buffers = "left"
 
+" fzf
+set rtp+=~/dev-env/scripts/fzf
 " Auto open NERDTree when running vim w/o arguments
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
