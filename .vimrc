@@ -74,6 +74,9 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <Y> y$<CR>                                                             " Y yanks to end of line
 
+map <leader>e :tabe ~/.vimrc<cr>                                                " Leader+e opens vimrc for editing and loads on save
+autocmd bufwritepost .vimrc source $MYVIMRC
+
 """ Disable arrow keys in VIM...IT'S A BAD HABIT
 noremap <Up> <NOP>
 noremap <Down> <NOP>
