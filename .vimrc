@@ -41,12 +41,12 @@ set title                                                                       
 set backspace=indent,eol,start                                                  " Allow backspacing for everything
 set ruler                                                                       " Show cursor location
 set incsearch                                                                   " Highlight first match when searching as its typed
+autocmd Filetype javascript setlocal ts=2 sw=2 sts=2                            " Indent 2 spaces for javascript
 autocmd Filetype java setlocal ts=2 sw=2 sts=2                                  " Indent 2 spaces for java
 autocmd Filetype cpp setlocal ts=2 sw=2 sts=2                                   " Indent 2 spaces for cpp
 autocmd Filetype html setlocal ts=2 sw=2 sts=2                                  " Indent 2 spaces for html
 autocmd Filetype yml setlocal ts=2 sw=2 sts=2                                   " Indent 2 spaces for yml
 autocmd Filetype yaml setlocal ts=2 sw=2 sts=2                                  " Indent 2 spaces for yaml
-autocmd Filetype js setlocal ts=2 sw=2 sts=2                                    " Indent 2 spaces for js
 "set pastetoggle=π                                                              " Toggle paste mode
 set backupdir=~/.vim/.backup//                                                  " Set backup location
 set directory=~/.vim/.swp//                                                     " Set swap file location
