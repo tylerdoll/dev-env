@@ -66,16 +66,18 @@ imap jk <esc>
 imap JK <esc>
 map <C-b> :NERDTreeToggle<CR>
 map <silent> <C-n> :noh<CR>
-nnoremap <space> za                                                             " Trigger case folding on space
 "split navigations
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-nnoremap <Y> y$<CR>                                                             " Y yanks to end of line
-
-map <leader>e :tabe ~/.vimrc<cr>                                                " Leader+e opens vimrc for editing and loads on save
+" Y yanks to end of line
+nnoremap <Y> y$<CR>                                                             
+" Leader+e opens vimrc for editing and loads on save
+map <leader>e :tabe ~/.vimrc<cr>
 autocmd bufwritepost .vimrc source $MYVIMRC
+" Leader+t opens terminal
+map <leader>t :terminal<cr>
 
 """ Disable arrow keys in VIM...IT'S A BAD HABIT
 noremap <Up> <NOP>
