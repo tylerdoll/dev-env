@@ -21,6 +21,7 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'drewtempelmeyer/palenight.vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'junegunn/fzf.vim'
+Plugin 'dense-analysis/ale'
 
 " All of your Plugins must be added before the following line
 call vundle#end()                                                               " required
@@ -101,3 +102,9 @@ set rtp+=~/dev-env/scripts/fzf
 " Auto open NERDTree when running vim w/o arguments
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+
+" ALE
+let g:ale_fixers = {
+\  'javascript': ['eslint'],
+\}
+let g:ale_fix_on_save = 1
