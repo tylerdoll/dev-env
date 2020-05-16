@@ -22,6 +22,7 @@ Plugin 'drewtempelmeyer/palenight.vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'junegunn/fzf.vim'
 Plugin 'dense-analysis/ale'
+Plugin 'itchyny/lightline.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()                                                               " required
