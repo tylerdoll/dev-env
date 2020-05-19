@@ -57,6 +57,11 @@ set undofile                                                                    
 set undodir=~/.vim/.undo//                                                      " Set undo file location
 set undolevels=1000                                                             " Max number of changes that can be undone
 set undoreload=10000                                                            " Max number of lines saved for undo on a buffer reload
+let g:netrw_browse_split=4                                                      " Open file in prior window
+let g:netrw_altv=1                                                              " Open file splits to the right
+let g:netrw_liststyle=3                                                         " Tree view 
+let g:netrw_list_hide=netrw_gitignore#Hide()                                    " Hide files ignored by git
+let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'                                  " Not too sure what this does
 
 
 colorscheme palenight 
