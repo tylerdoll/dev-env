@@ -1,25 +1,25 @@
 [alias]
-	st = status
+    st = status
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
     ll = branch -vv
     llr = branch -vr
     amend = commit --amend
 
-	# aliases to match hg commands
-	out = !git fetch && git log FETCH_HEAD..
-	outgoing = !git fetch && git log FETCH_HEAD
-	in = !git fetch && git log ..FETCH_HEAD
-	incoming = !git fetch && git log ..FETCH_HEAD
-	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    # aliases to match hg commands
+    out = !git fetch && git log FETCH_HEAD..
+    outgoing = !git fetch && git log FETCH_HEAD
+    in = !git fetch && git log ..FETCH_HEAD
+    incoming = !git fetch && git log ..FETCH_HEAD
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     difff = --no-pager diff --name-only
 [credential]
-	helper = cache --timeout=86400
+    helper = cache --timeout=86400
 [push]
-	default = simple
+    default = simple
 [core]
-	editor = vim
-	autocrlf = input
-	pager = less --tabs=4 -RFX
+    editor = vim
+    autocrlf = input
+    pager = less --tabs=4 -RFX
 [branch]
     autosetuprebase = always
     autosetupmerge = always
@@ -28,22 +28,22 @@
 [color]
     status = always
     branch = always
-	ui = true
-[include]
-    path = ./.gitconfig.user
+    ui = true
+[user]
+    name = Tyler Doll
 
 # Git diff so fancy
 [pager]
     diff = diff-so-fancy | less --tabs=4 -RFXG --pattern '^(Date|added|deleted|modified|diff): '
 [color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
+    oldNormal = red bold
+    oldHighlight = red bold 52
+    newNormal = green bold
+    newHighlight = green bold 22
 [color "diff"]
-	meta = 11
-	frag = magenta bold
-	commit = yellow bold
-	old = red bold
-	new = green bold
-	whitespace = red reverse
+    meta = 11
+    frag = magenta bold
+    commit = yellow bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
