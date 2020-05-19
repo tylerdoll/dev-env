@@ -63,6 +63,8 @@ let g:netrw_liststyle=3                                                         
 let g:netrw_list_hide=netrw_gitignore#Hide()                                    " Hide files ignored by git
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'                                  " Not too sure what this does
 
+" Command to generate ctags in the current directory
+command! Tag !ctags -R .
 
 colorscheme palenight 
 
