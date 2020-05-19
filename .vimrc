@@ -43,6 +43,7 @@ set title                                                                       
 set backspace=indent,eol,start                                                  " Allow backspacing for everything
 set ruler                                                                       " Show cursor location
 set incsearch                                                                   " Highlight first match when searching as its typed
+set path+=**                                                                    " Enable fuzzy search for the find command
 autocmd Filetype javascript setlocal ts=2 sw=2 sts=2                            " Indent 2 spaces for javascript
 autocmd Filetype java setlocal ts=2 sw=2 sts=2                                  " Indent 2 spaces for java
 autocmd Filetype cpp setlocal ts=2 sw=2 sts=2                                   " Indent 2 spaces for cpp
