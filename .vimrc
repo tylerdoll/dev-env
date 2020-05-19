@@ -27,42 +27,54 @@ Plugin 'itchyny/lightline.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()                                                               " required
 
+""""""""""""""""""""""""""""""""
+""""""""""""""" Settings
+""""""""""""""""""""""""""""""""
+
+"""""" Syntax formatting
 filetype plugin indent on                                                       " autoindent
 syntax on                                                                       " syntax highlighting
 set tabstop=4                                                                   " show existing tab with 4 spaces width
 set expandtab                                                                   " Insert spaces instead of a tab char
 set shiftwidth=4                                                                " when indenting with use 4 spaces width
-set number                                                                      " Show line numbers
 set autoindent                                                                  " Enable autoindenting new lines
-set mouse=a                                                                     " Enable mouse
-set foldenable                                                                  " Enable folding
-set foldmethod=indent                                                           " Fold based on line indets
-set foldlevel=99
-set viminfo='100,<100,s10,h                                                     " 100 marks, 100 lines, 10 kb, disable search highlight
-set title                                                                       " Show VIM in terminal title
-set backspace=indent,eol,start                                                  " Allow backspacing for everything
-set ruler                                                                       " Show cursor location
-set incsearch                                                                   " Highlight first match when searching as its typed
-set path+=**                                                                    " Enable fuzzy search for the find command
 autocmd Filetype javascript setlocal ts=2 sw=2 sts=2                            " Indent 2 spaces for javascript
 autocmd Filetype java setlocal ts=2 sw=2 sts=2                                  " Indent 2 spaces for java
 autocmd Filetype cpp setlocal ts=2 sw=2 sts=2                                   " Indent 2 spaces for cpp
 autocmd Filetype html setlocal ts=2 sw=2 sts=2                                  " Indent 2 spaces for html
 autocmd Filetype yml setlocal ts=2 sw=2 sts=2                                   " Indent 2 spaces for yml
 autocmd Filetype yaml setlocal ts=2 sw=2 sts=2                                  " Indent 2 spaces for yaml
+
+"""""" Vim UI 
+set foldenable                                                                  " Enable folding
+set foldmethod=indent                                                           " Fold based on line indets
+set foldlevel=99
+set number                                                                      " Show line numbers
+set mouse=a                                                                     " Enable mouse
+set viminfo='100,<100,s10,h                                                     " 100 marks, 100 lines, 10 kb, disable search highlight
+set title                                                                       " Show VIM in terminal title
+set backspace=indent,eol,start                                                  " Allow backspacing for everything
+set ruler                                                                       " Show cursor location
+set incsearch                                                                   " Highlight first match when searching as its typed
+set path+=**                                                                    " Enable fuzzy search for the find command
 "set pastetoggle=π                                                              " Toggle paste mode
+
+"""""" Vim files
 set backupdir=~/.vim/.backup//                                                  " Set backup location
 set directory=~/.vim/.swp//                                                     " Set swap file location
 set undofile                                                                    " Store undo history so it will persist when reopening a file
 set undodir=~/.vim/.undo//                                                      " Set undo file location
 set undolevels=1000                                                             " Max number of changes that can be undone
 set undoreload=10000                                                            " Max number of lines saved for undo on a buffer reload
+
+"""""" Default file browsing
 let g:netrw_browse_split=4                                                      " Open file in prior window
 let g:netrw_altv=1                                                              " Open file splits to the right
 let g:netrw_liststyle=3                                                         " Tree view 
 let g:netrw_list_hide=netrw_gitignore#Hide()                                    " Hide files ignored by git
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'                                  " Not too sure what this does
 
+"""""" Commands
 " Command to generate ctags in the current directory
 command! Tag !ctags -R .
 
